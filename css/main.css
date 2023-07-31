@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  /* outline: 1px solid red; */
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-sec {
+  width: 800px;
+  outline: 1px solid green;
+}
+
+.head {
+  width: 780px;
+  height: 100px;
+  outline: 1px solid gold;
+}
+
+.clients {
+  margin-left: 100px;
+}
+
+.listpsy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.sidebar {
+  width: 400px;
+  height: 1000px;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  outline: 1px solid tomato;
+  background-color: bisque;
+}
+
+.sidebar-side {
+  width: 380px;
+  height: 380px;
+  background-color: rgb(99, 99, 154);
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */
