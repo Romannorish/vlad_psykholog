@@ -1,38 +1,12 @@
-
-.header-sec{
-    width: 800px;
-    outline: 1px solid green;
-}
-
-.head{
-    width: 780px;
-    height: 100px;
-    outline: 1px solid gold;
-}
-
-.clients{
-    margin-left: 100px;
-}
-
-.listpsy{
-    display: flex;
-    list-style: none;
-}
-
-
-
-.sidebar{
-    width: 400px;
-    height: 1000px;
-    display: block;
-    flex-direction: column;
-    outline: 1px solid tomato;
-    background-color: bisque;
-}
-
-.sidebar-side{
-width: 380px;
-height: 380px;
-background-color: rgb(99, 99, 154);
-padding: 10px;
+.btn{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: blue;
+    color: #fff;
+    outline: 1px solid black;
+    &:hover,
+    &:focus{
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+    }
 }

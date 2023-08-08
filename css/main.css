@@ -26,7 +26,6 @@ img {
 }
 
 .container {
-  /* outline: 1px solid red; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -34,43 +33,80 @@ img {
   margin-right: auto;
 }
 
-.header-sec {
-  width: 800px;
-  outline: 1px solid green;
+body {
+  background-image: url("https://kartinkin.net/uploads/posts/2021-04/thumbs/1617585036_24-p-fon-dlya-saita-temnii-24.jpg");
 }
 
-.head {
-  width: 780px;
-  height: 100px;
-  outline: 1px solid gold;
-}
-
-.clients {
-  margin-left: 100px;
-}
-
-.listpsy {
+.header {
+  max-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("https://klike.net/uploads/posts/2022-12/1670126271_1.jpg");
+}
+
+.title-name {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
 }
 
-.sidebar {
-  width: 400px;
-  height: 1000px;
-  display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  outline: 1px solid tomato;
-  background-color: bisque;
+@media screen and (max-width: 767.98px) {
+  .nav-list {
+    display: none;
+  }
+}
+.nav-item {
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nav-item:hover, .nav-item:focus {
+  text-decoration: underline;
+  color: #fff;
 }
 
-.sidebar-side {
-  width: 380px;
-  height: 380px;
-  background-color: rgb(99, 99, 154);
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-list {
+  margin-left: auto;
+  list-style: none;
+  color: #fff;
+}
+
+.contact-item {
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+}
+
+.btn {
   padding: 10px;
+  border-radius: 15px;
+  background-color: blue;
+  color: #fff;
+  outline: 1px solid black;
+}
+.btn:hover, .btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=main.css.map */
