@@ -5,3 +5,9 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $('.det').click(function(event){
+       alert('а шо він там каже?')
+    });
+});
+
