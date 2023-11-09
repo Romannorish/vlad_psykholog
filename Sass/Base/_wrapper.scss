@@ -1,0 +1,144 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper {
+    
+}
+
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkgoldenrod;
+    z-index: 2;
+
+}
+.container {
+}
+.header_body {
+    position: relative;
+   
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+.header_logo {
+    flex: 0 0 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.header_logo img{
+    max-width: 100%;
+    display: block;
+}
+.header_burger {
+    
+}
+.header_menu {
+}
+
+
+.header_burger {
+display: block;
+width: 40px;
+height: 30px;
+}
+
+.header_burger svg {
+    display: none;
+}
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header_list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+.header_link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media (max-width:768px){
+   
+    .header_burger svg {
+        display: block;
+        width: 30px;
+         height: 20px; 
+        position: relative;
+    z-index: 3;
+    }
+
+    .header_menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+        background-color: brown;
+        padding: 70px 10px 20px 10px;
+
+    }
+   
+    .header_menu.active{
+        top: 0;
+    }
+    
+    .header_list {
+        display: block;
+    }
+    .header_list li {
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+
+
+
+.cont-text:first-child{
+margin-top: 70px;
+}
+.cont-text p {
+    margin-bottom: 30px;
+}
+.text {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: normal;
+
+}
