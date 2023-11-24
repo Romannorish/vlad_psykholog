@@ -32,7 +32,6 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: darkgoldenrod;
   z-index: 2;
 }
 
@@ -65,6 +64,10 @@ html, body {
   display: block;
 }
 
+.burger_svg {
+  fill: white;
+}
+
 .header_burger {
   display: block;
   width: 40px;
@@ -93,6 +96,9 @@ html, body {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
+  background-color: black;
+  border-radius: 15px;
+  padding: 8px;
 }
 
 .header_link:hover,
@@ -110,17 +116,17 @@ html, body {
   }
   .header_menu {
     position: fixed;
-    top: -100%;
-    left: 0;
+    top: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background-color: rgb(157, 130, 130);
     padding: 70px 10px 20px 10px;
+    background-color: rgb(65, 136, 53);
   }
   .header_menu.active {
-    top: 0;
+    left: 0;
   }
   .header_list {
     display: block;
@@ -154,6 +160,7 @@ html, body {
 .zaharovna img {
   width: 100%;
   max-width: 100vw;
+  border-radius: 20px;
 }
 
 .seryoga {
@@ -167,6 +174,7 @@ html, body {
 .seryoga img {
   width: 250px;
   max-width: 100vw;
+  border-radius: 20px;
 }
 
 .det {
@@ -180,4 +188,127 @@ html, body {
           transform: scale(1.1);
   -webkit-transition: all 0.05s ease;
   transition: all 0.05s ease;
+}
+
+.contrnt_psi {
+  margin-top: 70px;
+}
+
+.contrnt_psi div {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img_card {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img_card img {
+  width: 350px;
+  max-width: 100vw;
+  padding: 5px 10px;
+}
+
+.img_card p {
+  text-align: center;
+}
+
+body {
+  background-image: url("https://oir.mobi/uploads/posts/2021-06/thumbs/1623683414_11-oir_mobi-p-zadnii-fon-priroda-priroda-krasivo-foto-11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-btn {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+  background-color: rgb(51, 106, 37);
+  color: white;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: rgb(69, 134, 53);
+  color: #e1e0e0;
+}
+
+input[type=text], input[type=password] {
+  width: 95%;
+  padding: 20px 5px;
+  display: inline-block;
+}
+
+input[type=text]:hover, input[type=password]:hover,
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(84, 201, 84);
+}
+
+.modal {
+  position: absolute;
+  top: -100%;
+  max-width: 100vw;
+  width: 640px;
+  background-color: rgb(52, 119, 43);
+  border-radius: 20px;
+  display: none;
+  z-index: 100;
+}
+
+.modal-container {
+  padding: 40px 40px;
+}
+
+.modal-close {
+  position: relative;
+  top: 0;
+  left: 100%;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.modal-open {
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.is-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation-name: modal;
+          animation-name: modal;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.label {
+  font-size: 20px;
+  color: white;
+}
+
+.text-form {
+  width: 50px;
 }/*# sourceMappingURL=main.css.map */

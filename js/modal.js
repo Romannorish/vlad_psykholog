@@ -1,13 +1,12 @@
-$(document).ready(function(){
-    $('.header_burger').click(function(event){
-        $('.header_burger,.header_menu').toggleClass('active');
-    });
-});
+const openModal = document.querySelector('.form-btn');
+const closeModal = document.querySelector('.modal-close');
+const formModal = document.querySelector('.modal');
 
+openModal.addEventListener('click', ()=>{
+    formModal.classList.toggle('is-active')
+})
 
-$(document).ready(function(){
-    $('.det').click(function(event){
-       alert('а шо він там каже?')
-    });
-});
+closeModal.addEventListener('click', ()=>{
+    formModal.classList.remove('is-active')
+})
 
