@@ -106,6 +106,11 @@ html, body {
   color: cadetblue;
 }
 
+@media (max-width: 900px) {
+  .header_link {
+    font-size: 12px;
+  }
+}
 @media (max-width: 768px) {
   .header_burger svg {
     display: block;
@@ -249,15 +254,16 @@ body {
   color: #e1e0e0;
 }
 
-input[type=text], input[type=password] {
+input[type=text] {
   width: 95%;
   padding: 20px 5px;
   display: inline-block;
+  background-color: rgb(236, 236, 236);
 }
 
 input[type=text]:hover, input[type=password]:hover,
 input[type=text]:focus, input[type=password]:focus {
-  background-color: rgb(84, 201, 84);
+  background-color: rgb(255, 255, 255);
 }
 
 .modal {
@@ -311,4 +317,40 @@ input[type=text]:focus, input[type=password]:focus {
 
 .text-form {
   width: 50px;
+}
+
+.submit {
+  padding: 10px 15px;
+  margin: 30px 0px;
+  color: rgb(0, 0, 0);
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: rgb(200, 239, 178);
+  color: rgb(37, 37, 37);
+}
+
+.secsess {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 20px;
+  display: none;
+}
+
+.secsess p {
+  padding: 15px 10px;
+}
+
+.close-window {
+  position: relative;
+  top: 0;
+  left: 90%;
+  width: 20px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
